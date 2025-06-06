@@ -51,8 +51,14 @@
 
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center p-8 pt-28">
+        <!-- Profile Picture Placeholder -->
+        <div class="w-40 h-40 sm:w-48 sm:h-48 bg-card-bg rounded-full flex items-center justify-center mb-8 shadow-xl">
+            <i class="fas fa-user fa-4x text-accent-teal"></i>
+            <!-- Or use an actual <img src="placeholder_url" alt="Profile Picture Placeholder" class="rounded-full w-full h-full object-cover"> -->
+            <!-- For now, an icon placeholder is fine as no actual image URL is provided -->
+        </div>
         <h1 class="text-4xl sm:text-5xl font-bold text-primary-text mb-4">Nikhil Kapasi</h1>
-        <h2 class="text-xl sm:text-2xl font-semibold text-accent-teal mb-6">Computer Engineering Student</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold text-accent-teal mb-6">Computer Engineering @ UCSB ECE</h2>
         <p class="max-w-2xl text-md sm:text-lg text-primary-text mb-8">
             Computer Engineering student with a strong foundation in VLSI, FPGA programming, and digital design. Experienced in hardware-software co-design for machine learning through projects involving high-level synthesis and deep learning hardware accelerators.
         </p>
@@ -79,7 +85,7 @@
             <!-- About Me Text -->
             <div class="text-lg text-primary-text max-w-3xl mx-auto mb-16 text-center">
                 <p>
-                    As a dedicated Computer Engineering student at UC Santa Barbara, I am deeply passionate about the intricacies of VLSI, the challenges of FPGA programming, and the elegance of digital design. My academic journey and project experiences have allowed me to cultivate a strong foundation in these areas. I am particularly fascinated by the intersection of hardware and software, especially in the realm of machine learning. This has led me to explore hardware-software co-design, utilizing high-level synthesis and developing deep learning hardware accelerators. I am driven by a desire to innovate and contribute to cutting-edge technologies that can solve real-world problems.
+                    Hi! My name is Nikhil, and I'm a Computer Engineering student at UC Santa Barbara. I have a passion for AI hardware 🤖, scientific computing 🔬, and machine learning 🧠. I'm currently working as a Product Manager at Phygtl, a startup 🚀 in the Bay Area, where I'm shaping product strategy 💡 and collaborating with an amazing team 🙌. When I'm not managing projects 📈, I'm diving into research 📚, exploring FPGA-based neuron models 💻, or finding new ways to solve scientific problems 🧪. I also love sharing knowledge as a Teaching Assistant 🧑‍🏫. Let's connect if you're into tech, startups, or just want to talk about AI! 🤝
                 </p>
             </div>
 
@@ -87,41 +93,24 @@
                 <i class="fas fa-cogs text-accent-teal mr-3"></i>Skills
             </h3>
             <!-- Skills Grid -->
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
-                <!-- Programming Languages -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto text-center">
+                <!-- Top Skills -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Programming Languages</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Top Skills</h4>
                     <ul class="list-none space-y-2">
-                        <li class="text-primary-text">Embedded C</li>
-                        <li class="text-primary-text">Verilog</li>
-                        <li class="text-primary-text">System Verilog</li>
-                        <li class="text-primary-text">High Level Synthesis (HLS)</li>
-                        <li class="text-primary-text">RISC-V Assembly</li>
-                        <li class="text-primary-text">C++</li>
-                        <li class="text-primary-text">Python</li>
-                        <li class="text-primary-text">Matlab</li>
-                        <li class="text-primary-text">Java</li>
-                    </ul>
-                </div>
-
-                <!-- Tools and Frameworks -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Tools & Frameworks</h4>
-                    <ul class="list-none space-y-2">
-                        <li class="text-primary-text">FPGA Programming (Vitis, Vivado)</li>
+                        <li class="text-primary-text">Very-Large-Scale Integration (VLSI)</li>
                         <li class="text-primary-text">Cadence Virtuoso</li>
-                        <li class="text-primary-text">Keil MDK</li>
+                        <li class="text-primary-text">Signal Processing</li>
                     </ul>
                 </div>
 
-                <!-- Technical Proficiencies -->
+                <!-- Languages -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Technical Proficiencies</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Languages</h4>
                     <ul class="list-none space-y-2">
-                        <li class="text-primary-text">VLSI Design</li>
-                        <li class="text-primary-text">ASIC Design</li>
-                        <li class="text-primary-text">Digital System’s Design</li>
-                        <li class="text-primary-text">Machine Learning Workflows</li>
+                        <li class="text-primary-text">Hindi (Native or Bilingual)</li>
+                        <li class="text-primary-text">English (Native or Bilingual)</li>
+                        <li class="text-primary-text">French (Limited Working)</li>
                     </ul>
                 </div>
             </div>
@@ -135,69 +124,184 @@
                 <i class="fas fa-briefcase text-accent-teal mr-3"></i>Experience
             </h2>
 
-            <!-- Research Experience Subsection -->
-            <h3 class="text-3xl font-semibold text-primary-text mb-10 text-center">Research Experience</h3>
-            <!-- Research Experience Cards -->
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-                <!-- Research Experience 1 -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Advised by Dr. Luke Theogarajan</h4>
-                    <p class="text-primary-text font-medium mb-1">Biomimetic Circuits & Nanosystems Group, UCSB</p>
-                    <p class="text-sm text-accent-orange mb-3">Sept 2023 - Present</p>
-                    <div class="text-primary-text space-y-2 flex-grow">
-                        <p class="font-semibold">Project: Potts Model Transformer</p>
-                        <ul class="list-disc list-inside ml-4 space-y-1">
-                            <li>Mapped Potts Model to transformer architectures for hardware acceleration.</li>
-                            <li>Leveraged factored learning and dense Hopfield networks to approximate transformer attention mechanisms.</li>
-                        </ul>
-                        <p class="font-semibold mt-2">Project: Stochastic Hardware PDE solvers for Scientific Computing</p>
-                        <ul class="list-disc list-inside ml-4 space-y-1">
-                            <li>Developed FPGA-based energy-efficient deep learning algorithms using High-Level Synthesis (C++) and Verilog.</li>
-                            <li>Applied statistical physics models for model discovery and acceleration.</li>
-                            <li>Experimented with Graph Neural Networks for dynamic graph computations, particularly biological neuron networks.</li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- New Experience Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                <!-- Research Experience 2 -->
+                <!-- TA CMPSC 24 -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Advised by Dr. Giovanni Vigna & Dr. Christopher Kruegel</h4>
-                    <p class="text-primary-text font-medium mb-1">UCSB Early Research Scholars Program (Computer Science) - UCSB SecLab</p>
-                    <p class="text-sm text-accent-orange mb-3">Sept 2023 - June 2024</p>
-                    <div class="text-primary-text space-y-2 flex-grow">
-                        <p class="font-semibold">Project: Novel reproducible format for Common Vulnerability Exposures through Dockerization</p>
-                        <ul class="list-disc list-inside ml-4 space-y-1">
-                            <li>Developed a novel CVEX framework to enable reproducible recreation and reproduction of CVEs using Docker.</li>
-                            <li>Analyzed CVE statistics, tools, and heuristics within previously containerized vulnerable environments to evaluate their effectiveness.</li>
-                            <li>Leveraged JavaScript, Python, and Docker to build a collaborative platform for centralized storage and sharing of the CVEX format.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work Experience Subsection -->
-            <h3 class="text-3xl font-semibold text-primary-text mb-10 text-center">Work Experience</h3>
-            <!-- Work Experience Cards -->
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Work Experience 1 -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Product Manager</h4>
-                    <p class="text-primary-text font-medium mb-1">Phygtl (Startup), Bay Area, CA</p>
-                    <p class="text-sm text-accent-orange mb-3">Jan 2023 - September 2024</p>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant: CMPSC 24 (Data Structures and Classes in C++)</h4>
+                    <p class="text-primary-text font-medium mb-1">UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">April 2025 - Present (3 months)</p>
                     <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
-                        <li>Collaborated with CEO/Founder to define product strategy and vision.</li>
-                        <li>Managed Jira sprint planning and engineering backlogs, optimizing project workflows and execution.</li>
+                        <li>Worked under Professor Diba Mirza as part of CMPSC 24 course staff.</li>
                     </ul>
                 </div>
 
-                <!-- Work Experience 2 -->
+                <!-- TA CMPSC 16 Jan 2025 -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Undergraduate Learning Assistant</h4>
-                    <p class="text-primary-text font-medium mb-1">Computer Science Dept, UCSB</p>
-                    <p class="text-sm text-accent-orange mb-3">Jan 2024 - Present</p>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant: CMPSC 16 (Introduction to C++)</h4>
+                    <p class="text-primary-text font-medium mb-1">UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">January 2025 - April 2025 (4 months)</p>
                     <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
-                        <li>Assisted professors in beginner to intermediate computer science courses.</li>
-                        <li>Held office hours, tutored students, and developed educational materials to address student needs.</li>
+                        <li>Worked under Professor Maryam Majedi as part of CMPSC 16 course staff.</li>
+                        <li>Location: Santa Barbara, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- TA CMPSC 8 Sep 2024 -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant: CMPSC 8 (Introduction to Python)</h4>
+                    <p class="text-primary-text font-medium mb-1">UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">September 2024 - December 2024 (4 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Worked under Professor Diba Mirza as part of CMPSC 8 course staff.</li>
+                        <li>Location: Santa Barbara, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- TA CMPSC 8 July 2024 -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant: CMPSC 8 (Introduction to Python)</h4>
+                    <p class="text-primary-text font-medium mb-1">UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">July 2024 - September 2024 (3 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Worked under Professor Diba Mirza as part of CMPSC 8 course staff.</li>
+                        <li>Location: Santa Barbara, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- TA CMPSC 32 April 2024 -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant: CMPSC 32 (Object Oriented Programming in C++)</h4>
+                    <p class="text-primary-text font-medium mb-1">UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">April 2024 - June 2024 (3 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Worked under Professor Ziad Matni as part of CMPSC 32 course staff.</li>
+                        <li>Location: Santa Barbara County, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- TA CMPSC 16 Jan 2024 -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant: CMPSC 16 (Introduction to C++)</h4>
+                    <p class="text-primary-text font-medium mb-1">UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">January 2024 - April 2024 (4 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Worked under Professor Maryam Majedi as part of CMPSC 16 course staff. (Note: resume says CMPSC 32, but title is CMPSC 16. I'll use CMPSC 16 as per title, consistent with other CMPSC 16 entry)</li>
+                        <li>Location: Santa Barbara, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- Biomimetic Circuits and Nanosystems Group -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Researcher</h4>
+                    <p class="text-primary-text font-medium mb-1">Biomimetic Circuits and Nanosystems Group, UC Santa Barbara</p>
+                    <p class="text-sm text-accent-orange mb-3">August 2023 - Present (1 year 11 months)</p>
+                    <div class="text-primary-text space-y-2 flex-grow">
+                        <p class="font-medium text-primary-text opacity-90">Advised by Dr. Luke Theogarajan: Department of Electrical and Computer Engineering</p>
+                        <p class="font-semibold mt-2">Project: Biophysically accurate neuron modeling using probabilistic computing methods</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Implemented FPGA based Boltzmann Machines (RBMs, RTRMBs) using HighLevel Synthesis in C++ and SystemVerilog.</li>
+                            <li>Trained Boltzmann Machines using Contrastive Divergence and Hebbian Learning facilitating hardware-based biophysically accurate neuron simulations for scientific modeling.</li>
+                            <li>Implementing Boltzmann machine training with FPGAs via High-Level Synthesis in C++ and Verilog, facilitating hardware-based biophysically accurate neuron simulations for scientific modeling.</li>
+                            <li>Utilizing and applying statistical physics models and techniques like the Potts Model for the training and testing of neural models.</li>
+                            <li>Mapping the compartmental neuron model for accurate independent dendrite, soma, and axon models, enabling the representation of complex non-linearities within a single neuron.</li>
+                        </ul>
+                        <p class="font-semibold mt-2">Project: Hardware Implemented PDE/ODE solver for Scientific Computing</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Hardware implemented PDE/ODE solver for scientific computing using Verilog digital design.</li>
+                            <li>Implemented FPGA based Range Kutta Method PDE solver for scientific computing.</li>
+                            <li>Researched possible hardware speedups through C++ High Level Synthesis.</li>
+                            <li>Experimented with Graph Neural Networks and Message passing on dynamic graphs such as the neuron network graph.</li>
+                            <li>Built a FPGA implemented attractor neural network (Hopfield Network) which led to the future probabilistic implementation of the neuron model.</li>
+                        </ul>
+                        <p class="mt-1">Location: University of California Santa Barbara, California, United States</p>
+                    </div>
+                </div>
+
+                <!-- Phygtl, Inc - Product Manager -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Product Manager</h4>
+                    <p class="text-primary-text font-medium mb-1">Phygtl, Inc</p>
+                    <p class="text-sm text-accent-orange mb-3">August 2023 - September 2024 (1 year 2 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Collaborated closely with the CEO/Founder as a core team member to shape product strategy and vision.</li>
+                        <li>Translated the vision into low-fidelity prototypes using Figma, facilitating user experience design and product conceptualization.</li>
+                        <li>Communicated product development roadmap, consisting of EPICs and user stories aligned with strategic objectives.</li>
+                        <li>Managed Jira task board, sprint planning, and the product backlog, ensuring efficient project tracking and execution.</li>
+                        <li>Led customer discovery initiatives and orchestrated product testing phases to gather valuable feedback.</li>
+                        <li>Location: Silicon Valley, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- Phygtl, Inc - Product Researcher -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Product Researcher</h4>
+                    <p class="text-primary-text font-medium mb-1">Phygtl, Inc</p>
+                    <p class="text-sm text-accent-orange mb-3">January 2023 - August 2023 (8 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Played a pivotal role as a core team member, focusing on business intelligence and product research.</li>
+                        <li>Successfully oversaw customer discovery efforts, collecting feedback from 3 target demographic student groups per week.</li>
+                        <li>Led product design efforts and transformed feedback into actionable improvements, ensuring enhanced user experiences.</li>
+                        <li>Conducted comprehensive technical research to inform and guide product implementation strategies.</li>
+                        <li>Location: Silicon Valley, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- UCSB SecLab -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">UCSB Early Research Scholars Program</h4>
+                    <p class="text-primary-text font-medium mb-1">UCSB SecLab</p>
+                    <p class="text-sm text-accent-orange mb-3">September 2023 - June 2024 (10 months)</p>
+                    <div class="text-primary-text space-y-2 flex-grow">
+                        <p class="font-medium text-primary-text opacity-90">Advised by Dr. Giovanni Vigna and Dr. Christopher Kruegel: Department of Computer Science</p>
+                        <p class="font-semibold mt-2">Project: Novel reproducible format for Common Vulnerability Exposures through Dockerization</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>CVE and vulnerability recreation and reproduction through Docker through a novel CVEX framework.</li>
+                            <li>Evaluation of CVE statistics, tools, and heuristics in previously containerized vulnerable environments.</li>
+                            <li>Utilizing Javascript, Python, and Docker to stand up a collaborative environment and database for centralized storage of new CVEX format.</li>
+                        </ul>
+                        <p class="mt-1">Location: University of California Santa Barbara, California, United States</p>
+                    </div>
+                </div>
+
+                <!-- Eating Disorders Resource Center -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Social Media And Outreach Coordinator - Student Action Commitee</h4>
+                    <p class="text-primary-text font-medium mb-1">Eating Disorders Resource Center</p>
+                    <p class="text-sm text-accent-orange mb-3">July 2018 - February 2023 (4 years 8 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Leading member of EDRC Student Action Committee , dedicated to promoting eating disorder awareness in Bay Area communities and educational institutions.</li>
+                        <li>Responsible for strategy and content planning on LinkedIn, Facebook, Instagram, and Twitter resulting in greater visibility across all social media platforms.</li>
+                        <li>Conducted interviews, recruitment, and comprehensive training for student volunteers across a range of essential skills, tasks, and leadership responsibilities.</li>
+                        <li>Oversaw project allocation, management, and progress tracking within EDRC, including the leadership of a team of twenty volunteers tasked with creating social media content, spearheading campaigns, and launching outreach initiatives.</li>
+                        <li>Recognized with the Young Movers and Shakers Award by the Behavioural Health Board of Santa Clara county in May 2021 for exceptional contributions to the committee.</li>
+                        <li>Location: Campbell, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- University of California, Santa Cruz -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Research Intern</h4>
+                    <p class="text-primary-text font-medium mb-1">University of California, Santa Cruz</p>
+                    <p class="text-sm text-accent-orange mb-3">May 2021 - August 2021 (4 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Collaborated with a Ph.D. candidate mentor to investigate protein interactions within bacterial cells.</li>
+                        <li>Enhanced research techniques and presentation abilities through active participation.</li>
+                        <li>Utilized a protein analysis software called APE to advance my programming skills and enhance proficiency in data analysis.</li>
+                        <li>Location: Jurica Lab, Santa Cruz, California, United States</li>
+                    </ul>
+                </div>
+
+                <!-- SEQUOIA APPAREL INC -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Marketing Intern</h4>
+                    <p class="text-primary-text font-medium mb-1">SEQUOIA APPAREL INC</p>
+                    <p class="text-sm text-accent-orange mb-3">September 2018 - June 2019 (10 months)</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Conducted market research for winter jackets and ski-wear, exploring emerging trends and potential additions to the catalog.</li>
+                        <li>Worked with Adobe publisher to create mock-ups of winter wear and design catalog layouts.</li>
+                        <li>Location: New York, New York, United States</li>
                     </ul>
                 </div>
             </div>
@@ -214,6 +318,11 @@
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Project 1: FFT Chip -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <!-- Project Image Placeholder -->
+                    <div class="w-full h-48 bg-primary-bg rounded-md flex items-center justify-center mb-4 shadow-inner">
+                        <i class="fas fa-image fa-3x text-accent-teal opacity-50"></i>
+                        <!-- Or use <img src="placeholder_project1_url" alt="Project Name Placeholder" class="w-full h-full object-cover rounded-md"> -->
+                    </div>
                     <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Sixteen Point Fast Fourier Transform CMOS Chip</h3>
                     <p class="text-primary-text mb-4 flex-grow">
                         Implemented and tested a sixteen point, eight-bit FFT chip using Skywater PDK in 130nm technology.
@@ -228,6 +337,11 @@
 
                 <!-- Project 2: Embedded Garage Door -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <!-- Project Image Placeholder -->
+                    <div class="w-full h-48 bg-primary-bg rounded-md flex items-center justify-center mb-4 shadow-inner">
+                        <i class="fas fa-image fa-3x text-accent-teal opacity-50"></i>
+                        <!-- Or use <img src="placeholder_project2_url" alt="Project Name Placeholder" class="w-full h-full object-cover rounded-md"> -->
+                    </div>
                     <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Embedded Garage Door in Microcontroller</h3>
                     <p class="text-primary-text mb-4 flex-grow">
                         Implemented a working garage door utilizing an STM microcontroller.
@@ -244,26 +358,88 @@
         </div>
     </section>
 
+    <!-- Publications Section -->
+    <section id="publications" class="p-8 bg-primary-bg flex flex-col items-center">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
+                <i class="fas fa-file-alt text-accent-teal mr-3"></i>Publications
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <!-- Publication Card -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h3>
+                    <p class="text-primary-text font-medium">Author: Nikhil Kapasi</p>
+                    <!-- If there was a link or journal, it could be added here -->
+                    <!-- Example: <p class="text-sm text-accent-orange mt-2">Published in: Journal of Interesting Neural Nets, Vol 1, 2024</p> -->
+                    <!-- Example: <a href="#" class="text-accent-orange hover:underline mt-3 inline-block">View Publication <i class="fas fa-external-link-alt ml-1"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section id="honors-awards" class="p-8 bg-primary-bg flex flex-col items-center">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
+                <i class="fas fa-award text-accent-teal mr-3"></i>Honors & Awards
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-lg">
+                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex items-center">
+                        <i class="fas fa-trophy text-accent-orange mr-3"></i>Saratoga Choir MVP Chamber Choir
+                    </li>
+                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex items-center">
+                        <i class="fas fa-star text-accent-orange mr-3"></i>Saratoga Choir Rising Star Award
+                    </li>
+                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex items-center">
+                        <i class="fas fa-users text-accent-orange mr-3"></i>2021 Santa Clara County Behavioral Health Community Heroes Award - Young Movers and Shakers Award
+                    </li>
+                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex items-center">
+                        <i class="fas fa-music text-accent-orange mr-3"></i>Saratoga Choir Outstanding Choir Member
+                    </li>
+                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex items-center">
+                        <i class="fas fa-flag text-accent-orange mr-3"></i>Saratoga Color Guard Outstanding Veteran
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Coursework Section -->
-    <section id="coursework" class="min-h-screen p-8 bg-primary-bg flex flex-col items-center">
+    <section id="coursework" class="py-16 p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-book text-accent-teal mr-3"></i>Relevant Coursework
             </h2>
-            <!-- Coursework List Container -->
-            <div class="max-w-3xl mx-auto">
-                <!-- Coursework Grid -->
-                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4 text-lg">
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>VSLI Principles (Schematic, Layout, Synthesis)</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Computer Architecture</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Digital and Analog Circuits</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Data Structures and Algorithms</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Object Oriented Programming in C++</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Probability and Statistics</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Convex Optimization</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Deep Learning</li>
-                    <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Probabilistic Machine Learning</li>
-                </ul>
+            <!-- Coursework list removed as per new resume data. This section can be repopulated or hidden. -->
+            <div class="text-center text-primary-text opacity-75">
+                <p>(Details of relevant coursework can be added here in the future.)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="p-8 bg-primary-bg flex flex-col items-center">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
+                <i class="fas fa-graduation-cap text-accent-teal mr-3"></i>Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- UC Santa Barbara -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">University of California, Santa Barbara</h3>
+                    <p class="text-primary-text font-medium">Bachelor of Science - BS, Computer Engineering</p>
+                    <p class="text-sm text-accent-orange mt-1 mb-2">(September 2022 - June 2026)</p>
+                    <!-- Any additional details like GPA or honors could be added here if provided -->
+                </div>
+
+                <!-- Saratoga High School -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Saratoga High School</h3>
+                    <p class="text-primary-text font-medium">High School Diploma, Very High Honors</p>
+                    <p class="text-primary-text text-sm opacity-90">High School/Secondary Diplomas and Certificates</p>
+                    <p class="text-sm text-accent-orange mt-1 mb-2">(August 2018 - June 2022)</p>
+                </div>
             </div>
         </div>
     </section>
@@ -278,13 +454,17 @@
                 I'm always open to discussing new projects, research opportunities, or anything else. Feel free to reach out!
             </p>
             <!-- Contact Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-6">
                 <a href="mailto:nik.kapasi@gmail.com" class="bg-accent-teal text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-accent-orange transition-all duration-300 shadow-lg flex items-center transform hover:scale-105">
                     <i class="fas fa-envelope mr-2"></i> Email Me
                 </a>
                 <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="bg-accent-teal text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-accent-orange transition-all duration-300 shadow-lg flex items-center transform hover:scale-105">
                     <i class="fab fa-linkedin mr-2"></i> LinkedIn Profile
                 </a>
+            </div>
+            <!-- Phone Number -->
+            <div class="mt-8 text-lg text-primary-text">
+                <i class="fas fa-phone-alt text-accent-teal mr-2"></i>(408) 802-7160
             </div>
         </div>
         <!-- Footer -->
