@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Kapasi - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#333333] text-[#DDC3D0]">
+    <!-- Navigation Bar -->
+    <nav class="bg-[#333333] fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold text-[#DDC3D0]">Nikhil Kapasi</a>
+            <ul class="flex space-x-4">
+                <li><a href="#hero" class="nav-link text-[#DDC3D0] hover:text-[#0ABAB5] transition duration-300">Hero</a></li>
+                <li><a href="#about" class="nav-link text-[#DDC3D0] hover:text-[#0ABAB5] transition duration-300">About Me</a></li>
+                <li><a href="#experience" class="nav-link text-[#DDC3D0] hover:text-[#0ABAB5] transition duration-300">Experience</a></li>
+                <li><a href="#projects" class="nav-link text-[#DDC3D0] hover:text-[#0ABAB5] transition duration-300">Projects</a></li>
+                <li><a href="#coursework" class="nav-link text-[#DDC3D0] hover:text-[#0ABAB5] transition duration-300">Coursework</a></li>
+                <li><a href="#contact" class="nav-link text-[#DDC3D0] hover:text-[#0ABAB5] transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Placeholder Sections for Scrolling -->
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 pt-24 pb-12 bg-[#333333]">
+        <!-- Main Heading -->
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-[#DDC3D0] mb-4">Nikhil Kapasi</h1>
+        <!-- Subheading -->
+        <p class="text-xl sm:text-2xl md:text-3xl text-[#DDC3D0] mb-8">Computer Engineering Student</p>
+        <!-- Summary Paragraph -->
+        <p class="max-w-2xl text-base sm:text-lg text-[#DDC3D0] mb-10 leading-relaxed">
+            Highly motivated and detail-oriented Computer Engineering student with a passion for software development and problem-solving. Seeking challenging opportunities to apply and expand technical skills in a dynamic environment.
+        </p>
+        <!-- Social Links with Icons -->
+        <div class="flex space-x-6">
+            <a href="mailto:nik.kapasi@gmail.com" class="text-[#0ABAB5] hover:text-[#ED9B40] transition duration-300 text-2xl sm:text-3xl" aria-label="Email Nikhil Kapasi" title="Email Nikhil Kapasi">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="text-[#0ABAB5] hover:text-[#ED9B40] transition duration-300 text-2xl sm:text-3xl" aria-label="Nikhil Kapasi's LinkedIn Profile" title="Nikhil Kapasi's LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-[#0ABAB5] hover:text-[#ED9B40] transition duration-300 text-2xl sm:text-3xl" aria-label="Nikhil Kapasi's GitHub Profile" title="Nikhil Kapasi's GitHub Profile">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 sm:py-20 bg-[#3B3561]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-[#DDC3D0] mb-12">About Me</h2>
+
+            <!-- Description Paragraph -->
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-[#DDC3D0] mb-16 leading-relaxed text-center">
+                Computer Engineering student with a strong foundation in VLSI, FPGA programming, and digital design. Experienced in hardware-software co-design for machine learning through projects involving high-level synthesis and deep learning hardware accelerators. I am passionate about pushing the boundaries of hardware capabilities and optimizing performance for complex computational tasks.
+            </p>
+
+            <!-- Skills Subsection -->
+            <div class="text-center mb-16">
+                <h3 class="text-3xl sm:text-4xl font-semibold text-[#DDC3D0] mb-10">Skills</h3>
+
+                <!-- Programming Languages -->
+                <div class="mb-8">
+                    <h4 class="text-2xl font-medium text-[#DDC3D0] mb-6">Programming Languages</h4>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Embedded C</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Verilog</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">System Verilog</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">High Level Synthesis</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">RISC-V Assembly</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">C++</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Matlab</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Java</span>
+                    </div>
+                </div>
+
+                <!-- Tools and Frameworks -->
+                <div class="mb-8">
+                    <h4 class="text-2xl font-medium text-[#DDC3D0] mb-6">Tools & Frameworks</h4>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">FPGA Programming (Vitis and Vivado Suite)</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Cadence Virtuoso</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Keil for ARM programming</span>
+                    </div>
+                </div>
+
+                <!-- Technical Proficiencies -->
+                <div>
+                    <h4 class="text-2xl font-medium text-[#DDC3D0] mb-6">Technical Proficiencies</h4>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">VLSI Design and ASIC Design</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Digital System’s Design</span>
+                        <span class="bg-[#0ABAB5] text-[#333333] px-4 py-2 rounded-full text-sm font-medium">Machine Learning Workflows</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 sm:py-20 bg-[#333333]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-[#DDC3D0] mb-16">Experience</h2>
+
+            <!-- Research Experience Subsection -->
+            <div class="mb-16">
+                <h3 class="text-3xl sm:text-4xl font-semibold text-[#DDC3D0] text-center mb-10">Research Experience</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Research Experience Card 1 -->
+                    <div class="bg-[#3B3561] text-[#DDC3D0] rounded-lg shadow-xl p-6 flex flex-col">
+                        <h4 class="font-bold text-xl mb-1">Potts Model Transformer</h4>
+                        <p class="italic text-md mb-1">Advised by Dr. Luke Theogarajan: Electrical and Computer Engineering, UCSB</p>
+                        <p class="italic text-md mb-2">Biomimetic Circuits & Nanosystems Group</p>
+                        <p class="text-sm text-gray-400 mb-3">Sept 2023 - Present</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm sm:text-base flex-grow">
+                            <li>Mapped Potts Model to transformer architectures for hardware acceleration.</li>
+                            <li>Leveraged factored learning and dense Hopfield networks to approximate transformer attention mechanisms.</li>
+                        </ul>
+                        <h5 class="font-semibold text-lg mt-4 mb-1">Stochastic Hardware PDE solvers for Scientific Computing</h5>
+                        <ul class="list-disc list-inside space-y-2 text-sm sm:text-base flex-grow">
+                            <li>Developed FPGA-based energy-efficient deep learning algorithms using High-Level Synthesis (C++) and Verilog.</li>
+                            <li>Applied statistical physics models for model discovery and acceleration.</li>
+                            <li>Experimented with Graph Neural Networks for dynamic graph computations, particularly biological neuron networks.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Research Experience Card 2 -->
+                    <div class="bg-[#3B3561] text-[#DDC3D0] rounded-lg shadow-xl p-6 flex flex-col">
+                        <h4 class="font-bold text-xl mb-1">Novel reproducible format for Common Vulnerability Exposures through Dockerization</h4>
+                        <p class="italic text-md mb-1">Advised by Dr. Giovanni Vigna and Dr. Christopher Kruegel: UCSB SecLab</p>
+                        <p class="italic text-md mb-2">UCSB Early Research Scholars Program (Computer Science)</p>
+                        <p class="text-sm text-gray-400 mb-3">Sept 2023 - June 2024</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm sm:text-base flex-grow">
+                            <li>Developed a novel CVEX framework to enable reproducible recreation and reproduction of CVEs using Docker.</li>
+                            <li>Analyzed CVE statistics, tools, and heuristics within previously containerized vulnerable environments to evaluate their effectiveness.</li>
+                            <li>Leveraged JavaScript, Python, and Docker to build a collaborative platform for centralized storage and sharing of the CVEX format.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Experience Subsection -->
+            <div>
+                <h3 class="text-3xl sm:text-4xl font-semibold text-[#DDC3D0] text-center mb-10">Work Experience</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Work Experience Card 1 -->
+                    <div class="bg-[#3B3561] text-[#DDC3D0] rounded-lg shadow-xl p-6 flex flex-col">
+                        <h4 class="font-bold text-xl mb-1">Product Manager</h4>
+                        <p class="italic text-md mb-2">Phygtl (Startup), Bay Area, CA</p>
+                        <p class="text-sm text-gray-400 mb-3">Jan 2023 - September 2024</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm sm:text-base flex-grow">
+                            <li>Collaborated with CEO/Founder to define product strategy and vision.</li>
+                            <li>Managed Jira sprint planning and engineering backlogs, optimizing project workflows and execution.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Work Experience Card 2 -->
+                    <div class="bg-[#3B3561] text-[#DDC3D0] rounded-lg shadow-xl p-6 flex flex-col">
+                        <h4 class="font-bold text-xl mb-1">Undergraduate Learning Assistant</h4>
+                        <p class="italic text-md mb-2">Computer Science Dept, UCSB</p>
+                        <p class="text-sm text-gray-400 mb-3">Jan 2024 - Present</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm sm:text-base flex-grow">
+                            <li>Assisted professors in beginner to intermediate computer science courses.</li>
+                            <li>Held office hours, tutored students, and developed educational materials to address student needs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 sm:py-20 bg-[#333333]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-[#DDC3D0] mb-16">Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-[#3B3561] text-[#DDC3D0] rounded-lg shadow-xl p-6 flex flex-col">
+                    <h3 class="font-bold text-2xl mb-3">Sixteen Point Fast Fourier Transform CMOS Chip</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm sm:text-base mb-4 flex-grow">
+                        <li>Designed and implemented a 16-point, 8-bit FFT CMOS chip using Skywater 130nm PDK.</li>
+                        <li>Conducted schematic design in Cadence Virtuoso, performing extensive simulations to ensure functionality and prepare for manufacturability.</li>
+                        <li>Successfully implemented and tested the chip.</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-[#0ABAB5] text-white hover:bg-[#ED9B40] hover:text-white font-medium py-2 px-4 rounded text-center transition duration-300 text-sm sm:text-base">
+                        View Project (Placeholder)
+                    </a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-[#3B3561] text-[#DDC3D0] rounded-lg shadow-xl p-6 flex flex-col">
+                    <h3 class="font-bold text-2xl mb-3">Embedded Garage Door in Microcontroller</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm sm:text-base mb-4 flex-grow">
+                        <li>Developed a microcontroller-based prototype garage door system using STM32.</li>
+                        <li>Integrated UART, I2C, SPI protocols for peripheral communication.</li>
+                        <li>Implemented Bluetooth for remote operation capabilities.</li>
+                        <li>Incorporated temperature sensors and accelerometer-based positioning for enhanced safety and functionality.</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-[#0ABAB5] text-white hover:bg-[#ED9B40] hover:text-white font-medium py-2 px-4 rounded text-center transition duration-300 text-sm sm:text-base">
+                        View Project (Placeholder)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coursework Section -->
+    <section id="coursework" class="py-16 sm:py-20 bg-[#3B3561]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-[#DDC3D0] mb-12">Relevant Coursework</h2>
+
+            <!-- Course List -->
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 max-w-4xl mx-auto text-base sm:text-lg">
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>VSLI Principles (Schematic, Layout, and Synthesis)</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Computer Architecture</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Digital and Analog Circuits</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Data Structures and Algorithms</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Object Oriented Programming in C++</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Probability and Statistics</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Convex Optimization</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Deep Learning</li>
+                <li class="text-[#DDC3D0]"><span class="text-[#0ABAB5] mr-2">&#10148;</span>Probabilistic Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 bg-[#333333] text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <h2 class="text-4xl sm:text-5xl font-bold text-[#DDC3D0] mb-8">Get In Touch</h2>
+
+            <!-- Call to Action Paragraph -->
+            <p class="max-w-xl mx-auto text-base sm:text-lg text-[#DDC3D0] mb-10 leading-relaxed">
+                Feel free to reach out if you'd like to connect or discuss potential opportunities. I'm always open to new challenges and collaborations.
+            </p>
+
+            <!-- Contact Links -->
+            <div class="space-y-6 sm:space-y-0 sm:flex sm:justify-center sm:space-x-10 text-lg sm:text-xl">
+                <div>
+                    <a href="mailto:nik.kapasi@gmail.com" class="inline-flex items-center text-[#0ABAB5] hover:text-[#ED9B40] transition duration-300">
+                        <i class="fas fa-envelope mr-3"></i>
+                        nik.kapasi@gmail.com
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#0ABAB5] hover:text-[#ED9B40] transition duration-300">
+                        <i class="fab fa-linkedin mr-3"></i>
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#333333] py-8 text-center border-t border-gray-700">
+        <p class="text-[#DDC3D0] text-sm">&copy; 2024 Nikhil Kapasi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Adjust for fixed navbar height if necessary, here assuming 60px navbar height
+                    // const navbarHeight = 60;
+                    // const elementPosition = targetElement.getBoundingClientRect().top;
+                    // const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+                    // window.scrollTo({
+                    //     top: offsetPosition,
+                    //     behavior: "smooth"
+                    // });
+
+                    // Simpler scroll for now, can be refined with offset later
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
