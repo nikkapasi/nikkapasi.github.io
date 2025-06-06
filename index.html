@@ -16,18 +16,6 @@
         html {
             scroll-behavior: smooth;
         }
-        /* Custom styles for the timeline */
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
-            left: -0.5rem;
-            top: 0.25rem;
-            background-color: #0ABAB5; /* accent color */
-            border: 3px solid #F8F9FA; /* background color */
-        }
     </style>
     <script>
         tailwind.config = {
@@ -158,48 +146,44 @@
     
     <!-- Teaching Experience Section -->
     <section id="teaching" class="py-24 px-8">
-        <div class="container mx-auto max-w-5xl">
+        <div class="container mx-auto max-w-6xl">
             <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Teaching Experience</h2>
-            <div class="relative pl-8">
-                <!-- Vertical timeline bar -->
-                <div class="absolute top-0 bottom-0 left-0 w-0.5 bg-border-color"></div>
-                <div class="space-y-12">
-                    <!-- Timeline Item -->
-                    <div class="relative timeline-item">
-                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 24</h3>
-                        <p class="text-sm text-accent mb-1">Apr 2025 - Present</p>
-                        <p class="text-text-secondary text-sm">Data Structures and Classes in C++ with Professor Diba Mirza.</p>
-                    </div>
-                     <!-- Timeline Item -->
-                    <div class="relative timeline-item">
-                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 16</h3>
-                        <p class="text-sm text-accent mb-1">Jan 2025 - Apr 2025</p>
-                        <p class="text-text-secondary text-sm">Introduction to C++ with Professor Maryam Majedi.</p>
-                    </div>
-                    <!-- Timeline Item -->
-                    <div class="relative timeline-item">
-                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 8</h3>
-                        <p class="text-sm text-accent mb-1">Sep 2024 - Dec 2024</p>
-                        <p class="text-text-secondary text-sm">Introduction to Python with Professor Diba Mirza.</p>
-                    </div>
-                    <!-- Timeline Item -->
-                    <div class="relative timeline-item">
-                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 8</h3>
-                        <p class="text-sm text-accent mb-1">Jul 2024 - Sep 2024</p>
-                        <p class="text-text-secondary text-sm">Introduction to Python with Professor Diba Mirza.</p>
-                    </div>
-                    <!-- Timeline Item -->
-                    <div class="relative timeline-item">
-                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 32</h3>
-                        <p class="text-sm text-accent mb-1">Apr 2024 - Jun 2024</p>
-                        <p class="text-text-secondary text-sm">Object Oriented Programming in C++ with Professor Ziad Matni.</p>
-                    </div>
-                     <!-- Timeline Item -->
-                    <div class="relative timeline-item">
-                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 16</h3>
-                        <p class="text-sm text-accent mb-1">Jan 2024 - Apr 2024</p>
-                        <p class="text-text-secondary text-sm">Introduction to C++ with Professor Maryam Majedi.</p>
-                    </div>
+            <div class="flex overflow-x-auto space-x-8 pb-4">
+                <!-- Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm flex-shrink-0 w-full md:w-96">
+                    <h3 class="text-lg font-semibold text-text-primary">UL-A: CMPSC 24</h3>
+                    <p class="text-text-secondary mb-2">Data Structures & Classes in C++</p>
+                    <p class="text-sm text-accent">Apr 2025 - Present</p>
+                </div>
+                 <!-- Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm flex-shrink-0 w-full md:w-96">
+                    <h3 class="text-lg font-semibold text-text-primary">UL-A: CMPSC 16</h3>
+                    <p class="text-text-secondary mb-2">Introduction to C++</p>
+                    <p class="text-sm text-accent">Jan 2025 - Apr 2025</p>
+                </div>
+                 <!-- Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm flex-shrink-0 w-full md:w-96">
+                    <h3 class="text-lg font-semibold text-text-primary">UL-A: CMPSC 8</h3>
+                    <p class="text-text-secondary mb-2">Introduction to Python</p>
+                    <p class="text-sm text-accent">Sep 2024 - Dec 2024</p>
+                </div>
+                 <!-- Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm flex-shrink-0 w-full md:w-96">
+                    <h3 class="text-lg font-semibold text-text-primary">UL-A: CMPSC 8</h3>
+                    <p class="text-text-secondary mb-2">Introduction to Python</p>
+                    <p class="text-sm text-accent">Jul 2024 - Sep 2024</p>
+                </div>
+                 <!-- Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm flex-shrink-0 w-full md:w-96">
+                    <h3 class="text-lg font-semibold text-text-primary">UL-A: CMPSC 32</h3>
+                    <p class="text-text-secondary mb-2">Object Oriented Programming in C++</p>
+                    <p class="text-sm text-accent">Apr 2024 - Jun 2024</p>
+                </div>
+                 <!-- Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm flex-shrink-0 w-full md:w-96">
+                    <h3 class="text-lg font-semibold text-text-primary">UL-A: CMPSC 16</h3>
+                    <p class="text-text-secondary mb-2">Introduction to C++</p>
+                    <p class="text-sm text-accent">Jan 2024 - Apr 2024</p>
                 </div>
             </div>
         </div>
