@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
@@ -18,110 +18,105 @@
         }
     </style>
     <script>
-        /* Define custom colors for Tailwind to use */
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-bg': '#333333',
-                        'card-bg': '#3B3561',
-                        'primary-text': '#DDC3D0',
-                        'accent-teal': '#0ABAB5',
-                        'accent-orange': '#ED9B40',
+                        'background': '#F8F9FA',
+                        'card': '#FFFFFF',
+                        'text-primary': '#212529',
+                        'text-secondary': '#6c757d',
+                        'accent': '#0ABAB5',
+                        'border-color': '#E9ECEF',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-primary-bg text-primary-text">
+<body class="bg-background text-text-primary">
     <!-- Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-card-bg shadow-lg">
-        <!-- Nav Container -->
-        <div class="container mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
-            <a href="#hero" class="text-xl font-semibold text-primary-text hover:text-accent-teal">Nikhil Kapasi</a>
-            <div class="space-x-4 mt-2 sm:mt-0 flex flex-wrap justify-center sm:justify-end">
-                <a href="#hero" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Home</a>
-                <a href="#research" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Research</a>
-                <a href="#publications" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Publications</a>
-                <a href="#teaching" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Teaching</a>
-                <a href="#work" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Work</a>
-                <a href="#projects" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Projects</a>
-                <a href="#education" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Education</a>
-                <a href="#skills" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Skills</a>
-                <a href="#awards" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Awards</a>
-                <a href="#contact" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Contact</a>
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-border-color shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-lg font-semibold text-text-primary tracking-wider">Nikhil Kapasi</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#research" class="text-text-secondary hover:text-accent transition-colors duration-300">Research</a>
+                <a href="#publications" class="text-text-secondary hover:text-accent transition-colors duration-300">Publications</a>
+                <a href="#teaching" class="text-text-secondary hover:text-accent transition-colors duration-300">Teaching</a>
+                <a href="#work" class="text-text-secondary hover:text-accent transition-colors duration-300">Work</a>
+                <a href="#projects" class="text-text-secondary hover:text-accent transition-colors duration-300">Projects</a>
+                <a href="#education" class="text-text-secondary hover:text-accent transition-colors duration-300">Education</a>
             </div>
+             <a href="#contact" class="hidden md:inline-block border border-accent text-accent px-4 py-2 rounded-md text-sm font-medium hover:bg-accent hover:text-white transition-colors">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center p-8 pt-28">
-        <!-- Profile Picture Placeholder -->
-        <div class="w-40 h-40 sm:w-48 sm:h-48 bg-card-bg rounded-full flex items-center justify-center mb-8 shadow-xl">
-            <i class="fas fa-user fa-4x text-accent-teal"></i>
+        <div class="w-32 h-32 bg-card rounded-full flex items-center justify-center mb-6 shadow-md border border-border-color">
+            <i class="fas fa-user fa-3x text-accent"></i>
         </div>
-        <h1 class="text-4xl sm:text-5xl font-bold text-primary-text mb-4">Nikhil Kapasi</h1>
-        <h2 class="text-xl sm:text-2xl font-semibold text-accent-teal mb-6">Computer Engineering @ UCSB ECE</h2>
-        <p class="max-w-3xl text-md sm:text-lg text-primary-text mb-8">
+        <h1 class="text-4xl md:text-6xl font-bold text-text-primary mb-4 tracking-tight">Nikhil Kapasi</h1>
+        <h2 class="text-lg md:text-xl font-medium text-accent mb-6 tracking-wide">Computer Engineering @ UCSB ECE</h2>
+        <p class="max-w-2xl text-md md:text-lg text-text-secondary mb-8">
             Computer Engineering student with a strong foundation in VLSI, FPGA programming, and digital design. Experienced in hardware-software co-design for machine learning through projects involving high-level synthesis and deep learning hardware accelerators.
         </p>
-        <!-- Social Links -->
         <div class="flex space-x-6">
-            <a href="mailto:nik.kapasi@gmail.com" class="text-accent-teal hover:text-accent-orange transition-all duration-300 text-2xl transform hover:scale-110">
+            <a href="mailto:nik.kapasi@gmail.com" class="text-text-secondary hover:text-accent transition-all duration-300 text-xl">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="text-accent-teal hover:text-accent-orange transition-all duration-300 text-2xl transform hover:scale-110">
+            <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-all duration-300 text-xl">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/nikhilkapasi" target="_blank" rel="noopener noreferrer" class="text-accent-teal hover:text-accent-orange transition-all duration-300 text-2xl transform hover:scale-110">
+            <a href="https://github.com/nikhilkapasi" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-all duration-300 text-xl">
                 <i class="fab fa-github"></i>
             </a>
         </div>
     </section>
 
+    <!-- Sections Wrapper -->
+    <div class="bg-card">
+    
     <!-- Research Section -->
-    <section id="research" class="p-8 bg-primary-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
-                <i class="fas fa-flask text-accent-teal mr-3"></i>Research Experience
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mb-16">
+    <section id="research" class="py-24 px-8">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Research Experience</h2>
+            <div class="space-y-12">
                  <!-- Biomimetic Circuits and Nanosystems Group -->
-                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Biomimetic Circuits & Nanosystems Group</h4>
-                    <p class="text-primary-text font-medium mb-1">Advised by Dr. Luke Theogarajan: Electrical and Computer Engineering, UCSB</p>
-                    <p class="text-sm text-accent-orange mb-3">September 2023 - Present</p>
-                    <div class="text-primary-text space-y-4 flex-grow">
+                 <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-1">Biomimetic Circuits & Nanosystems Group</h3>
+                    <p class="text-text-secondary mb-2">Advised by Dr. Luke Theogarajan</p>
+                    <p class="text-sm text-accent mb-4">September 2023 - Present</p>
+                    <div class="text-text-secondary space-y-4">
                         <div>
-                            <p class="font-semibold">Project: Potts Model Transformer</p>
-                            <ul class="list-disc list-inside ml-4 space-y-1">
+                            <h4 class="font-semibold text-text-primary">Project: Potts Model Transformer</h4>
+                            <ul class="list-disc list-inside ml-4 space-y-1 mt-2">
                                 <li>Mapped Potts Model to transformer architectures for hardware acceleration.</li>
                                 <li>Leveraged factored learning and dense Hopfield networks to approximate transformer attention mechanisms.</li>
                             </ul>
                         </div>
                         <div>
-                            <p class="font-semibold">Project: Stochastic Hardware PDE solvers for Scientific Computing</p>
-                            <ul class="list-disc list-inside ml-4 space-y-1">
+                            <h4 class="font-semibold text-text-primary">Project: Stochastic Hardware PDE solvers for Scientific Computing</h4>
+                            <ul class="list-disc list-inside ml-4 space-y-1 mt-2">
                                 <li>Developed FPGA-based energy-efficient deep learning algorithms using High-Level Synthesis (C++) and Verilog.</li>
                                 <li>Applied statistical physics models for model discovery and acceleration.</li>
-                                <li>Experimented with Graph Neural Networks for dynamic graph computations, particularly biological neuron networks.</li>
+                                <li>Experimented with Graph Neural Networks for dynamic graph computations.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- UCSB Early Research Scholars Program -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">UCSB Early Research Scholars Program (Computer Science)</h4>
-                    <p class="text-primary-text font-medium mb-1">Advised by Dr. Giovanni Vigna and Dr. Christopher Kruegel: UCSB SecLab</p>
-                    <p class="text-sm text-accent-orange mb-3">September 2023 - June 2024</p>
-                    <div class="text-primary-text space-y-2 flex-grow">
-                        <p class="font-semibold">Project: Novel reproducible format for Common Vulnerability Exposures through Dockerization</p>
-                        <ul class="list-disc list-inside ml-4 space-y-1">
-                            <li>Developed a novel CVEX framework to enable reproducible recreation and reproduction of CVEs using Docker.</li>
-                            <li>Analyzed CVE statistics, tools, and heuristics within previously containerized vulnerable environments to evaluate their effectiveness.</li>
-                            <li>Leveraged JavaScript, Python, and Docker to build a collaborative platform for centralized storage and sharing of the CVEX format.</li>
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-1">UCSB Early Research Scholars Program</h3>
+                    <p class="text-text-secondary mb-2">Advised by Dr. Giovanni Vigna and Dr. Christopher Kruegel</p>
+                    <p class="text-sm text-accent mb-4">September 2023 - June 2024</p>
+                     <div class="text-text-secondary space-y-2">
+                        <h4 class="font-semibold text-text-primary">Project: Novel reproducible format for Common Vulnerability Exposures through Dockerization</h4>
+                        <ul class="list-disc list-inside ml-4 space-y-1 mt-2">
+                            <li>Developed a novel CVEX framework for reproducible CVE recreation using Docker.</li>
+                            <li>Analyzed CVE statistics and tools in containerized vulnerable environments.</li>
+                            <li>Leveraged JavaScript, Python, and Docker to build a collaborative sharing platform.</li>
                         </ul>
                     </div>
                 </div>
@@ -130,82 +125,63 @@
     </section>
     
     <!-- Publications Section -->
-    <section id="publications" class="p-8 bg-card-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
-                <i class="fas fa-file-alt text-accent-teal mr-3"></i>Publications
-            </h2>
-            <div class="max-w-2xl mx-auto">
-                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
-                    <p class="text-primary-text font-medium">Author: Nikhil Kapasi</p>
-                </div>
+    <section id="publications" class="py-24 px-8 bg-background">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Publications</h2>
+            <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                <h3 class="text-xl font-semibold text-text-primary mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
+                <p class="text-text-secondary">Author: Nikhil Kapasi</p>
             </div>
         </div>
     </section>
     
     <!-- Teaching Experience Section -->
-    <section id="teaching" class="p-8 bg-primary-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
-                <i class="fas fa-chalkboard-teacher text-accent-teal mr-3"></i>Teaching Experience
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
-                <!-- Undergraduate Learning Assistant -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant</h4>
-                    <p class="text-primary-text font-medium mb-1">Computer Science Dept, UCSB</p>
-                    <p class="text-sm text-accent-orange mb-3">January 2024 - Present</p>
-                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+    <section id="teaching" class="py-24 px-8">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Teaching Experience</h2>
+            <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-1">Undergraduate Learning Assistant</h4>
+                    <p class="text-text-secondary mb-2">Computer Science Dept, UCSB</p>
+                    <p class="text-sm text-accent mb-4">January 2024 - Present</p>
+                    <ul class="list-disc list-inside text-text-secondary space-y-1">
                         <li>Assisted professors in beginner to intermediate computer science courses.</li>
                         <li>Held office hours, tutored students, and developed educational materials to address student needs.</li>
                     </ul>
-                </div>
             </div>
         </div>
     </section>
     
     <!-- Work Experience Section -->
-    <section id="work" class="p-8 bg-card-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
-                <i class="fas fa-briefcase text-accent-teal mr-3"></i>Work Experience
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
-                <!-- Product Manager -->
-                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Product Manager</h4>
-                    <p class="text-primary-text font-medium mb-1">Phygtl (Startup), Bay Area, CA</p>
-                    <p class="text-sm text-accent-orange mb-3">January 2023 - September 2024</p>
-                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
-                        <li>Collaborated with CEO/Founder to define product strategy and vision.</li>
-                        <li>Managed Jira sprint planning and engineering backlogs, optimizing project workflows and execution.</li>
-                    </ul>
-                </div>
+    <section id="work" class="py-24 px-8 bg-background">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Work Experience</h2>
+            <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                <h3 class="text-xl font-semibold text-text-primary mb-1">Product Manager</h3>
+                <p class="text-text-secondary mb-2">Phygtl (Startup), Bay Area, CA</p>
+                <p class="text-sm text-accent mb-4">January 2023 - September 2024</p>
+                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                    <li>Collaborated with CEO/Founder to define product strategy and vision.</li>
+                    <li>Managed Jira sprint planning and engineering backlogs, optimizing project workflows and execution.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="p-8 bg-primary-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
-                <i class="fas fa-project-diagram text-accent-teal mr-3"></i>Projects
-            </h2>
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Project 1: FFT Chip -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Sixteen Point Fast Fourier Transform CMOS Chip</h3>
-                    <p class="text-primary-text mb-4 flex-grow">
-                        Implemented and tested a sixteen point, eight-bit FFT chip using Skywater PDK in 130nm technology. Designed the CMOS chip using Skywater 130nm PDK and conducted schematic design in Cadence Virtuoso with extensive simulations for functionality and manufacturability.
+    <section id="projects" class="py-24 px-8">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Sixteen Point FFT CMOS Chip</h3>
+                    <p class="text-text-secondary">
+                        Implemented and tested a 16-point, 8-bit FFT chip using Skywater 130nm PDK, including schematic design and extensive simulation in Cadence Virtuoso.
                     </p>
                 </div>
-
-                <!-- Project 2: Embedded Garage Door -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Embedded Garage Door in Microcontroller</h3>
-                    <p class="text-primary-text mb-4 flex-grow">
-                        Implemented a working garage door utilizing an STM microcontroller. Developed a microcontroller-based prototype garage door system using STM32. Integrated UART, I2C, SPI protocols, Bluetooth for remote operation, temperature sensors, and accelerometer-based positioning for enhanced safety.
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Embedded Garage Door Controller</h3>
+                    <p class="text-text-secondary">
+                        Developed a prototype garage door system using an STM32 microcontroller, integrating UART, I2C, SPI, Bluetooth, and various sensors for enhanced safety and remote operation.
                     </p>
                 </div>
             </div>
@@ -213,134 +189,83 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="p-8 bg-card-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
-                <i class="fas fa-graduation-cap text-accent-teal mr-3"></i>Education
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <!-- UC Santa Barbara -->
-                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">University of California, Santa Barbara</h3>
-                    <p class="text-primary-text font-medium">Bachelor of Science (B.S.) in Computer Engineering, Honors</p>
-                    <p class="text-sm text-accent-orange mt-1 mb-2">Expected Graduation: 2026</p>
-                    <h4 class="text-md font-semibold text-primary-text mt-4 mb-2">Relevant Coursework:</h4>
-                    <ul class="list-disc list-inside text-sm text-primary-text space-y-1">
-                        <li>VSLI Principles (Schematic, Layout, and Synthesis)</li>
-                        <li>Computer Architecture</li>
-                        <li>Digital and Analog Circuits</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Object Oriented Programming in C++</li>
-                        <li>Probability and Statistics</li>
-                        <li>Convex Optimization</li>
-                        <li>Deep Learning & Probabilistic Machine Learning</li>
-                    </ul>
+    <section id="education" class="py-24 px-8 bg-background">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Education</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-1">University of California, Santa Barbara</h3>
+                    <p class="text-text-secondary">B.S. in Computer Engineering, Honors</p>
+                    <p class="text-sm text-accent mt-1">Expected Graduation: 2026</p>
                 </div>
-
-                <!-- Saratoga High School -->
-                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-center">
-                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Saratoga High School</h3>
-                    <p class="text-primary-text font-medium">Graduation: 2022</p>
-                    <p class="text-primary-text font-medium">Very High Honors</p>
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-1">Saratoga High School</h3>
+                    <p class="text-text-secondary">Graduation: 2022, Very High Honors</p>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- Skills Section -->
-    <section id="skills" class="p-8 bg-primary-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
-                <i class="fas fa-cogs text-accent-teal mr-3"></i>Skills
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
-                <!-- Programming Languages -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-3">Programming Languages</h4>
-                    <ul class="list-none space-y-2 text-primary-text">
-                        <li>Embedded C</li>
-                        <li>Verilog & System Verilog</li>
-                        <li>High Level Synthesis</li>
-                        <li>RISC-V Assembly</li>
-                        <li>C++ & Python</li>
-                        <li>Matlab & Java</li>
-                    </ul>
+    <section id="skills" class="py-24 px-8">
+         <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Languages</h3>
+                    <p class="text-text-secondary">Embedded C, Verilog, SystemVerilog, HLS, RISC-V Assembly, C++, Python, Matlab, Java</p>
                 </div>
-                <!-- Tools and Frameworks -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-3">Tools and Frameworks</h4>
-                    <ul class="list-none space-y-2 text-primary-text">
-                        <li>FPGA Programming (Vitis, Vivado)</li>
-                        <li>Cadence Virtuoso for VLSI</li>
-                        <li>Keil for embedded ARM</li>
-                    </ul>
+                <div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Tools & Frameworks</h3>
+                    <p class="text-text-secondary">FPGA Programming (Vitis, Vivado), Cadence Virtuoso, Keil for ARM</p>
                 </div>
-                <!-- Technical Proficiencies -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-3">Technical Proficiencies</h4>
-                    <ul class="list-none space-y-2 text-primary-text">
-                        <li>VLSI & ASIC Design</li>
-                        <li>Digital System's Design</li>
-                        <li>Machine Learning Workflows</li>
-                    </ul>
+                <div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Proficiencies</h3>
+                     <p class="text-text-secondary">VLSI & ASIC Design, Digital System's Design, Machine Learning Workflows</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="p-8 bg-card-bg flex flex-col items-center">
-        <div class="container mx-auto py-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
-                <i class="fas fa-award text-accent-teal mr-3"></i>Awards
-            </h2>
-            <div class="max-w-4xl mx-auto">
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
-                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
-                        <i class="fas fa-trophy text-accent-orange mr-4"></i>Jayson Chang Memorial Scholarship Award
-                    </li>
-                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
-                        <i class="fas fa-trophy text-accent-orange mr-4"></i>President's Volunteer Service Award-Gold
-                    </li>
-                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
-                        <i class="fas fa-trophy text-accent-orange mr-4"></i>President's Education Award
-                    </li>
-                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
-                        <i class="fas fa-trophy text-accent-orange mr-4"></i>Santa Clara County Young Movers and Shaker's Award
-                    </li>
-                </ul>
+    <section id="awards" class="py-24 px-8 bg-background">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Awards</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+                <div class="bg-card p-4 rounded-lg border border-border-color shadow-sm">
+                    <p class="text-text-secondary">Jayson Chang Memorial Scholarship</p>
+                </div>
+                <div class="bg-card p-4 rounded-lg border border-border-color shadow-sm">
+                    <p class="text-text-secondary">President's Volunteer Service Award</p>
+                </div>
+                <div class="bg-card p-4 rounded-lg border border-border-color shadow-sm">
+                    <p class="text-text-secondary">President's Education Award</p>
+                </div>
+                <div class="bg-card p-4 rounded-lg border border-border-color shadow-sm">
+                    <p class="text-text-secondary">Santa Clara County Young Mover's Award</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-primary-bg text-center p-8 flex flex-col justify-center items-center">
-        <div class="container mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-bold text-primary-text mb-8">
-                <i class="fas fa-paper-plane text-accent-teal mr-3"></i>Get In Touch
-            </h2>
-            <p class="text-lg sm:text-xl text-primary-text max-w-lg mx-auto mb-10">
-                I'm always open to discussing new projects, research opportunities, or anything else. Feel free to reach out!
+    <footer id="contact" class="py-20 px-8 bg-white border-t border-border-color">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold text-text-primary mb-4">Get In Touch</h2>
+            <p class="text-text-secondary max-w-md mx-auto mb-8">
+                I'm always open to discussing new projects, research opportunities, or anything else.
             </p>
-            <!-- Contact Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-6">
-                <a href="mailto:nik.kapasi@gmail.com" class="bg-accent-teal text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-accent-orange transition-all duration-300 shadow-lg flex items-center transform hover:scale-105">
-                    <i class="fas fa-envelope mr-2"></i> Email Me
+            <div class="flex justify-center space-x-4">
+                <a href="mailto:nik.kapasi@gmail.com" class="bg-accent text-white px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity">
+                    Email Me
                 </a>
-                <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="bg-accent-teal text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-accent-orange transition-all duration-300 shadow-lg flex items-center transform hover:scale-105">
-                    <i class="fab fa-linkedin mr-2"></i> LinkedIn Profile
+                <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="border border-border-color text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-border-color transition-colors">
+                    LinkedIn
                 </a>
             </div>
-            <!-- Phone Number -->
-            <div class="mt-8 text-lg text-primary-text">
-                <i class="fas fa-phone-alt text-accent-teal mr-2"></i>(408) 802-7160
-            </div>
+             <p class="text-sm text-text-secondary mt-16">&copy; <script>document.write(new Date().getFullYear())</script> Nikhil Kapasi. All rights reserved.</p>
         </div>
-        <!-- Footer -->
-        <footer class="mt-20 pt-8 border-t border-primary-text border-opacity-30 text-center w-full max-w-4xl">
-            <p class="text-primary-text">&copy; <script>document.write(new Date().getFullYear())</script> Nikhil Kapasi. All rights reserved.</p>
-        </footer>
-    </section>
+    </footer>
 
 </body>
 </html>
