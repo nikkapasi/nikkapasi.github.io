@@ -35,9 +35,10 @@
 <body class="bg-primary-bg text-primary-text">
     <!-- Navigation Bar -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-card-bg shadow-lg">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <!-- Nav Container -->
+        <div class="container mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
             <a href="#hero" class="text-xl font-semibold text-primary-text hover:text-accent-teal">Nikhil Kapasi</a>
-            <div class="space-x-4">
+            <div class="space-x-0 sm:space-x-4 mt-2 sm:mt-0 flex flex-wrap justify-center sm:justify-end">
                 <a href="#hero" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Home</a>
                 <a href="#about" class="text-primary-text hover:text-accent-orange transition-colors duration-300">About</a>
                 <a href="#experience" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Experience</a>
@@ -50,11 +51,12 @@
 
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center p-8 pt-28">
-        <h1 class="text-5xl font-bold text-primary-text mb-4">Nikhil Kapasi</h1>
-        <h2 class="text-2xl font-semibold text-accent-teal mb-6">Computer Engineering Student</h2>
-        <p class="max-w-2xl text-lg text-primary-text mb-8">
+        <h1 class="text-4xl sm:text-5xl font-bold text-primary-text mb-4">Nikhil Kapasi</h1>
+        <h2 class="text-xl sm:text-2xl font-semibold text-accent-teal mb-6">Computer Engineering Student</h2>
+        <p class="max-w-2xl text-md sm:text-lg text-primary-text mb-8">
             Computer Engineering student with a strong foundation in VLSI, FPGA programming, and digital design. Experienced in hardware-software co-design for machine learning through projects involving high-level synthesis and deep learning hardware accelerators.
         </p>
+        <!-- Social Links -->
         <div class="flex space-x-6">
             <a href="mailto:nik.kapasi@gmail.com" class="text-accent-teal hover:text-accent-orange transition-all duration-300 text-2xl transform hover:scale-110">
                 <i class="fas fa-envelope"></i>
@@ -71,9 +73,10 @@
     <!-- About Me Section -->
     <section id="about" class="min-h-screen p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
-            <h2 class="text-4xl font-bold text-center text-primary-text mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-user-circle text-accent-teal mr-3"></i>About Me
             </h2>
+            <!-- About Me Text -->
             <div class="text-lg text-primary-text max-w-3xl mx-auto mb-16 text-center">
                 <p>
                     As a dedicated Computer Engineering student at UC Santa Barbara, I am deeply passionate about the intricacies of VLSI, the challenges of FPGA programming, and the elegance of digital design. My academic journey and project experiences have allowed me to cultivate a strong foundation in these areas. I am particularly fascinated by the intersection of hardware and software, especially in the realm of machine learning. This has led me to explore hardware-software co-design, utilizing high-level synthesis and developing deep learning hardware accelerators. I am driven by a desire to innovate and contribute to cutting-edge technologies that can solve real-world problems.
@@ -83,10 +86,11 @@
             <h3 class="text-3xl font-semibold text-center text-primary-text mb-10">
                 <i class="fas fa-cogs text-accent-teal mr-3"></i>Skills
             </h3>
+            <!-- Skills Grid -->
             <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
                 <!-- Programming Languages -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-3">Programming Languages</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Programming Languages</h4>
                     <ul class="list-none space-y-2">
                         <li class="text-primary-text">Embedded C</li>
                         <li class="text-primary-text">Verilog</li>
@@ -102,7 +106,7 @@
 
                 <!-- Tools and Frameworks -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-3">Tools & Frameworks</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Tools & Frameworks</h4>
                     <ul class="list-none space-y-2">
                         <li class="text-primary-text">FPGA Programming (Vitis, Vivado)</li>
                         <li class="text-primary-text">Cadence Virtuoso</li>
@@ -112,7 +116,7 @@
 
                 <!-- Technical Proficiencies -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-3">Technical Proficiencies</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Technical Proficiencies</h4>
                     <ul class="list-none space-y-2">
                         <li class="text-primary-text">VLSI Design</li>
                         <li class="text-primary-text">ASIC Design</li>
@@ -127,16 +131,17 @@
     <!-- Experience Section -->
     <section id="experience" class="min-h-screen p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
-            <h2 class="text-4xl font-bold text-center text-primary-text mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-briefcase text-accent-teal mr-3"></i>Experience
             </h2>
 
-            <!-- Research Experience -->
+            <!-- Research Experience Subsection -->
             <h3 class="text-3xl font-semibold text-primary-text mb-10 text-center">Research Experience</h3>
+            <!-- Research Experience Cards -->
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
                 <!-- Research Experience 1 -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-2">Advised by Dr. Luke Theogarajan</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Advised by Dr. Luke Theogarajan</h4>
                     <p class="text-primary-text font-medium mb-1">Biomimetic Circuits & Nanosystems Group, UCSB</p>
                     <p class="text-sm text-accent-orange mb-3">Sept 2023 - Present</p>
                     <div class="text-primary-text space-y-2 flex-grow">
@@ -156,7 +161,7 @@
 
                 <!-- Research Experience 2 -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-2">Advised by Dr. Giovanni Vigna & Dr. Christopher Kruegel</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Advised by Dr. Giovanni Vigna & Dr. Christopher Kruegel</h4>
                     <p class="text-primary-text font-medium mb-1">UCSB Early Research Scholars Program (Computer Science) - UCSB SecLab</p>
                     <p class="text-sm text-accent-orange mb-3">Sept 2023 - June 2024</p>
                     <div class="text-primary-text space-y-2 flex-grow">
@@ -170,12 +175,13 @@
                 </div>
             </div>
 
-            <!-- Work Experience -->
+            <!-- Work Experience Subsection -->
             <h3 class="text-3xl font-semibold text-primary-text mb-10 text-center">Work Experience</h3>
+            <!-- Work Experience Cards -->
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Work Experience 1 -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-2">Product Manager</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Product Manager</h4>
                     <p class="text-primary-text font-medium mb-1">Phygtl (Startup), Bay Area, CA</p>
                     <p class="text-sm text-accent-orange mb-3">Jan 2023 - September 2024</p>
                     <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
@@ -186,7 +192,7 @@
 
                 <!-- Work Experience 2 -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-xl font-semibold text-accent-teal mb-2">Undergraduate Learning Assistant</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">Undergraduate Learning Assistant</h4>
                     <p class="text-primary-text font-medium mb-1">Computer Science Dept, UCSB</p>
                     <p class="text-sm text-accent-orange mb-3">Jan 2024 - Present</p>
                     <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
@@ -201,13 +207,14 @@
     <!-- Projects Section -->
     <section id="projects" class="min-h-screen p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
-            <h2 class="text-4xl font-bold text-center text-primary-text mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-project-diagram text-accent-teal mr-3"></i>Projects
             </h2>
+            <!-- Projects Grid -->
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Project 1: FFT Chip -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h3 class="text-xl font-semibold text-accent-teal mb-3">Sixteen Point Fast Fourier Transform CMOS Chip</h3>
+                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Sixteen Point Fast Fourier Transform CMOS Chip</h3>
                     <p class="text-primary-text mb-4 flex-grow">
                         Implemented and tested a sixteen point, eight-bit FFT chip using Skywater PDK in 130nm technology.
                         This involved designing and implementing the chip using Skywater 130nm PDK,
@@ -221,7 +228,7 @@
 
                 <!-- Project 2: Embedded Garage Door -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h3 class="text-xl font-semibold text-accent-teal mb-3">Embedded Garage Door in Microcontroller</h3>
+                    <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-3">Embedded Garage Door in Microcontroller</h3>
                     <p class="text-primary-text mb-4 flex-grow">
                         Implemented a working garage door utilizing an STM microcontroller.
                         This project involved developing a microcontroller-based prototype garage door system using STM32,
@@ -240,10 +247,12 @@
     <!-- Coursework Section -->
     <section id="coursework" class="min-h-screen p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
-            <h2 class="text-4xl font-bold text-center text-primary-text mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-book text-accent-teal mr-3"></i>Relevant Coursework
             </h2>
+            <!-- Coursework List Container -->
             <div class="max-w-3xl mx-auto">
+                <!-- Coursework Grid -->
                 <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4 text-lg">
                     <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>VSLI Principles (Schematic, Layout, Synthesis)</li>
                     <li class="text-primary-text p-3 bg-card-bg rounded-md shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105"><i class="fas fa-chevron-right text-accent-teal mr-2"></i>Computer Architecture</li>
@@ -262,12 +271,13 @@
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-card-bg text-center p-8 flex flex-col justify-center items-center">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-primary-text mb-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-primary-text mb-8">
                 <i class="fas fa-paper-plane text-accent-teal mr-3"></i>Get In Touch
             </h2>
-            <p class="text-xl text-primary-text max-w-lg mx-auto mb-10">
+            <p class="text-lg sm:text-xl text-primary-text max-w-lg mx-auto mb-10">
                 I'm always open to discussing new projects, research opportunities, or anything else. Feel free to reach out!
             </p>
+            <!-- Contact Buttons -->
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <a href="mailto:nik.kapasi@gmail.com" class="bg-accent-teal text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-accent-orange transition-all duration-300 shadow-lg flex items-center transform hover:scale-105">
                     <i class="fas fa-envelope mr-2"></i> Email Me
