@@ -16,6 +16,18 @@
         html {
             scroll-behavior: smooth;
         }
+        /* Custom styles for the timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            left: -0.5rem;
+            top: 0.25rem;
+            background-color: #0ABAB5; /* accent color */
+            border: 3px solid #F8F9FA; /* background color */
+        }
     </style>
     <script>
         tailwind.config = {
@@ -139,7 +151,7 @@
                 <a href="https://arxiv.org/html/2505.11635v1" target="_blank" rel="noopener noreferrer" class="hover:text-accent">
                     <h3 class="text-xl font-semibold text-text-primary mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
                 </a>
-                <p class="text-text-secondary">Author: Nikhil Kapasi</p>
+                <p class="text-text-secondary">Authors: Nikhil Kapasi, William Whitehead, Luke Theogarajan</p>
             </div>
         </div>
     </section>
@@ -148,14 +160,47 @@
     <section id="teaching" class="py-24 px-8">
         <div class="container mx-auto max-w-5xl">
             <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Teaching Experience</h2>
-            <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
-                    <h3 class="text-xl font-semibold text-text-primary mb-1">Undergraduate Learning Assistant</h4>
-                    <p class="text-text-secondary mb-2">Computer Science Dept, UCSB</p>
-                    <p class="text-sm text-accent mb-4">January 2024 - Present</p>
-                    <ul class="list-disc list-inside text-text-secondary space-y-1">
-                        <li>Assisted professors in beginner to intermediate computer science courses.</li>
-                        <li>Held office hours, tutored students, and developed educational materials to address student needs.</li>
-                    </ul>
+            <div class="relative pl-8">
+                <!-- Vertical timeline bar -->
+                <div class="absolute top-0 bottom-0 left-0 w-0.5 bg-border-color"></div>
+                <div class="space-y-12">
+                    <!-- Timeline Item -->
+                    <div class="relative timeline-item">
+                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 24</h3>
+                        <p class="text-sm text-accent mb-1">Apr 2025 - Present</p>
+                        <p class="text-text-secondary text-sm">Data Structures and Classes in C++ with Professor Diba Mirza.</p>
+                    </div>
+                     <!-- Timeline Item -->
+                    <div class="relative timeline-item">
+                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 16</h3>
+                        <p class="text-sm text-accent mb-1">Jan 2025 - Apr 2025</p>
+                        <p class="text-text-secondary text-sm">Introduction to C++ with Professor Maryam Majedi.</p>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative timeline-item">
+                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 8</h3>
+                        <p class="text-sm text-accent mb-1">Sep 2024 - Dec 2024</p>
+                        <p class="text-text-secondary text-sm">Introduction to Python with Professor Diba Mirza.</p>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative timeline-item">
+                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 8</h3>
+                        <p class="text-sm text-accent mb-1">Jul 2024 - Sep 2024</p>
+                        <p class="text-text-secondary text-sm">Introduction to Python with Professor Diba Mirza.</p>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative timeline-item">
+                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 32</h3>
+                        <p class="text-sm text-accent mb-1">Apr 2024 - Jun 2024</p>
+                        <p class="text-text-secondary text-sm">Object Oriented Programming in C++ with Professor Ziad Matni.</p>
+                    </div>
+                     <!-- Timeline Item -->
+                    <div class="relative timeline-item">
+                        <h3 class="text-lg font-semibold text-text-primary">Undergraduate Learning Assistant: CMPSC 16</h3>
+                        <p class="text-sm text-accent mb-1">Jan 2024 - Apr 2024</p>
+                        <p class="text-text-secondary text-sm">Introduction to C++ with Professor Maryam Majedi.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
