@@ -40,7 +40,9 @@
             <a href="#hero" class="text-xl font-semibold text-primary-text hover:text-accent-teal">Nikhil Kapasi</a>
             <div class="space-x-4 mt-2 sm:mt-0 flex flex-wrap justify-center sm:justify-end">
                 <a href="#hero" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Home</a>
-                <a href="#experience" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Experience</a>
+                <a href="#research" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Research</a>
+                <a href="#teaching" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Teaching</a>
+                <a href="#work" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Work</a>
                 <a href="#projects" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Projects</a>
                 <a href="#education" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Education</a>
                 <a href="#skills" class="text-primary-text hover:text-accent-orange transition-colors duration-300">Skills</a>
@@ -75,15 +77,15 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="p-8 bg-primary-bg flex flex-col items-center">
+    <!-- Research Section -->
+    <section id="research" class="p-8 bg-gray-800 flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
-                <i class="fas fa-briefcase text-accent-teal mr-3"></i>Experience
+                <i class="fas fa-flask text-accent-teal mr-3"></i>Research
             </h2>
 
-            <!-- Research Experience -->
-            <h3 class="text-2xl sm:text-3xl font-semibold text-center text-accent-orange mb-10">Research Experience</h3>
+            <!-- Research Groups & Projects -->
+            <h3 class="text-2xl sm:text-3xl font-semibold text-center text-accent-orange mb-10">Research Groups & Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mb-16">
                  <!-- Biomimetic Circuits and Nanosystems Group -->
                  <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
@@ -125,20 +127,24 @@
                 </div>
             </div>
 
-            <!-- Work Experience -->
-            <h3 class="text-2xl sm:text-3xl font-semibold text-center text-accent-orange mb-10">Work Experience</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Product Manager -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
-                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Product Manager</h4>
-                    <p class="text-primary-text font-medium mb-1">Phygtl (Startup), Bay Area, CA</p>
-                    <p class="text-sm text-accent-orange mb-3">January 2023 - September 2024</p>
-                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
-                        <li>Collaborated with CEO/Founder to define product strategy and vision.</li>
-                        <li>Managed Jira sprint planning and engineering backlogs, optimizing project workflows and execution.</li>
-                    </ul>
+            <!-- Publications -->
+            <h3 class="text-2xl sm:text-3xl font-semibold text-center text-accent-orange mb-10">Publications</h3>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
+                    <p class="text-primary-text font-medium">Author: Nikhil Kapasi</p>
                 </div>
-
+            </div>
+        </div>
+    </section>
+    
+    <!-- Teaching Experience Section -->
+    <section id="teaching" class="p-8 bg-primary-bg flex flex-col items-center">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
+                <i class="fas fa-chalkboard-teacher text-accent-teal mr-3"></i>Teaching Experience
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
                 <!-- Undergraduate Learning Assistant -->
                 <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
                     <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Undergraduate Learning Assistant</h4>
@@ -152,9 +158,30 @@
             </div>
         </div>
     </section>
+    
+    <!-- Work Experience Section -->
+    <section id="work" class="p-8 bg-gray-800 flex flex-col items-center">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
+                <i class="fas fa-briefcase text-accent-teal mr-3"></i>Work Experience
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+                <!-- Product Manager -->
+                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                    <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Product Manager</h4>
+                    <p class="text-primary-text font-medium mb-1">Phygtl (Startup), Bay Area, CA</p>
+                    <p class="text-sm text-accent-orange mb-3">January 2023 - September 2024</p>
+                    <ul class="list-disc list-inside text-primary-text space-y-1 flex-grow">
+                        <li>Collaborated with CEO/Founder to define product strategy and vision.</li>
+                        <li>Managed Jira sprint planning and engineering backlogs, optimizing project workflows and execution.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="p-8 bg-gray-800 flex flex-col items-center">
+    <section id="projects" class="p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-project-diagram text-accent-teal mr-3"></i>Projects
@@ -180,7 +207,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="p-8 bg-primary-bg flex flex-col items-center">
+    <section id="education" class="p-8 bg-gray-800 flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-graduation-cap text-accent-teal mr-3"></i>Education
@@ -215,7 +242,7 @@
     </section>
     
     <!-- Skills Section -->
-    <section id="skills" class="p-8 bg-gray-800 flex flex-col items-center">
+    <section id="skills" class="p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-cogs text-accent-teal mr-3"></i>Skills
@@ -256,7 +283,7 @@
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="p-8 bg-primary-bg flex flex-col items-center">
+    <section id="awards" class="p-8 bg-gray-800 flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-award text-accent-teal mr-3"></i>Awards
@@ -281,7 +308,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gray-800 text-center p-8 flex flex-col justify-center items-center">
+    <section id="contact" class="py-24 bg-primary-bg text-center p-8 flex flex-col justify-center items-center">
         <div class="container mx-auto">
             <h2 class="text-3xl sm:text-4xl font-bold text-primary-text mb-8">
                 <i class="fas fa-paper-plane text-accent-teal mr-3"></i>Get In Touch
