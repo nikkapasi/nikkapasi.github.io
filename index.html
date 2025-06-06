@@ -18,11 +18,11 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-bg': '#2d3748', /* A darker, more professional blue-gray */
-                        'card-bg': '#4a5568',    /* A lighter card background */
-                        'primary-text': '#e2e8f0', /* Lighter text for better contrast */
-                        'accent-teal': '#38b2ac',  /* A slightly muted teal */
-                        'accent-orange': '#ed8936', /* A slightly muted orange */
+                        'primary-bg': '#333333',
+                        'card-bg': '#3B3561',
+                        'primary-text': '#DDC3D0',
+                        'accent-teal': '#0ABAB5',
+                        'accent-orange': '#ED9B40',
                     }
                 }
             }
@@ -34,7 +34,7 @@
 </head>
 <body class="bg-primary-bg text-primary-text">
     <!-- Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-gray-800 shadow-lg">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-card-bg shadow-lg">
         <!-- Nav Container -->
         <div class="container mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
             <a href="#hero" class="text-xl font-semibold text-primary-text hover:text-accent-teal">Nikhil Kapasi</a>
@@ -79,7 +79,7 @@
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="p-8 bg-gray-800 flex flex-col items-center">
+    <section id="research" class="p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-flask text-accent-teal mr-3"></i>Research Experience
@@ -128,13 +128,13 @@
     </section>
     
     <!-- Publications Section -->
-    <section id="publications" class="p-8 bg-primary-bg flex flex-col items-center">
+    <section id="publications" class="p-8 bg-card-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-file-alt text-accent-teal mr-3"></i>Publications
             </h2>
             <div class="max-w-2xl mx-auto">
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                     <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
                     <p class="text-primary-text font-medium">Author: Nikhil Kapasi</p>
                 </div>
@@ -143,7 +143,7 @@
     </section>
     
     <!-- Teaching Experience Section -->
-    <section id="teaching" class="p-8 bg-gray-800 flex flex-col items-center">
+    <section id="teaching" class="p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-chalkboard-teacher text-accent-teal mr-3"></i>Teaching Experience
@@ -164,14 +164,14 @@
     </section>
     
     <!-- Work Experience Section -->
-    <section id="work" class="p-8 bg-primary-bg flex flex-col items-center">
+    <section id="work" class="p-8 bg-card-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-briefcase text-accent-teal mr-3"></i>Work Experience
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
                 <!-- Product Manager -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
+                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:-translate-y-1">
                     <h4 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Product Manager</h4>
                     <p class="text-primary-text font-medium mb-1">Phygtl (Startup), Bay Area, CA</p>
                     <p class="text-sm text-accent-orange mb-3">January 2023 - September 2024</p>
@@ -185,7 +185,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="p-8 bg-gray-800 flex flex-col items-center">
+    <section id="projects" class="p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-project-diagram text-accent-teal mr-3"></i>Projects
@@ -211,14 +211,14 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="p-8 bg-primary-bg flex flex-col items-center">
+    <section id="education" class="p-8 bg-card-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-graduation-cap text-accent-teal mr-3"></i>Education
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- UC Santa Barbara -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                     <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">University of California, Santa Barbara</h3>
                     <p class="text-primary-text font-medium">Bachelor of Science (B.S.) in Computer Engineering, Honors</p>
                     <p class="text-sm text-accent-orange mt-1 mb-2">Expected Graduation: 2026</p>
@@ -236,7 +236,7 @@
                 </div>
 
                 <!-- Saratoga High School -->
-                <div class="bg-card-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-center">
+                <div class="bg-primary-bg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-center">
                     <h3 class="text-lg sm:text-xl font-semibold text-accent-teal mb-1">Saratoga High School</h3>
                     <p class="text-primary-text font-medium">Graduation: 2022</p>
                     <p class="text-primary-text font-medium">Very High Honors</p>
@@ -246,7 +246,7 @@
     </section>
     
     <!-- Skills Section -->
-    <section id="skills" class="p-8 bg-gray-800 flex flex-col items-center">
+    <section id="skills" class="p-8 bg-primary-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-12">
                 <i class="fas fa-cogs text-accent-teal mr-3"></i>Skills
@@ -287,23 +287,23 @@
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="p-8 bg-primary-bg flex flex-col items-center">
+    <section id="awards" class="p-8 bg-card-bg flex flex-col items-center">
         <div class="container mx-auto py-16">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-text mb-16">
                 <i class="fas fa-award text-accent-teal mr-3"></i>Awards
             </h2>
             <div class="max-w-4xl mx-auto">
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
-                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg flex items-center">
+                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
                         <i class="fas fa-trophy text-accent-orange mr-4"></i>Jayson Chang Memorial Scholarship Award
                     </li>
-                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg flex items-center">
+                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
                         <i class="fas fa-trophy text-accent-orange mr-4"></i>President's Volunteer Service Award-Gold
                     </li>
-                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg flex items-center">
+                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
                         <i class="fas fa-trophy text-accent-orange mr-4"></i>President's Education Award
                     </li>
-                    <li class="text-primary-text p-4 bg-card-bg rounded-md shadow-lg flex items-center">
+                    <li class="text-primary-text p-4 bg-primary-bg rounded-md shadow-lg flex items-center">
                         <i class="fas fa-trophy text-accent-orange mr-4"></i>Santa Clara County Young Movers and Shaker's Award
                     </li>
                 </ul>
@@ -312,7 +312,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gray-800 text-center p-8 flex flex-col justify-center items-center">
+    <section id="contact" class="py-24 bg-primary-bg text-center p-8 flex flex-col justify-center items-center">
         <div class="container mx-auto">
             <h2 class="text-3xl sm:text-4xl font-bold text-primary-text mb-8">
                 <i class="fas fa-paper-plane text-accent-teal mr-3"></i>Get In Touch
