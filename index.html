@@ -38,14 +38,14 @@
     <!-- Navigation Bar -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-border-color shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#hero" class="text-lg font-semibold text-text-primary tracking-wider">Nikhil Kapasi</a>
+            <a href="#hero" class="text-lg font-semibold text-text-primary tracking-wider hover:text-accent transition-colors">Nikhil Kapasi</a>
             <div class="hidden md:flex space-x-8">
                 <a href="#research" class="text-text-secondary hover:text-accent transition-colors duration-300">Research</a>
                 <a href="#publications" class="text-text-secondary hover:text-accent transition-colors duration-300">Publications</a>
                 <a href="#teaching" class="text-text-secondary hover:text-accent transition-colors duration-300">Teaching</a>
                 <a href="#work" class="text-text-secondary hover:text-accent transition-colors duration-300">Work</a>
                 <a href="#projects" class="text-text-secondary hover:text-accent transition-colors duration-300">Projects</a>
-                <a href="#education" class="text-text-secondary hover:text-accent transition-colors duration-300">Education</a>
+                <a href="#coursework" class="text-text-secondary hover:text-accent transition-colors duration-300">Coursework</a>
             </div>
              <a href="#contact" class="hidden md:inline-block border border-accent text-accent px-4 py-2 rounded-md text-sm font-medium hover:bg-accent hover:text-white transition-colors">Contact</a>
         </div>
@@ -137,7 +137,7 @@
             <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Publications</h2>
             <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
                 <a href="https://arxiv.org/html/2505.11635v1" target="_blank" rel="noopener noreferrer" class="hover:text-accent">
-                    <h3 class="text-xl font-semibold text-text-primary mb-2">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2 hover:text-accent transition-colors">The Gaussian-Multinoulli Restricted Boltzmann Machine: A Potts Model Extension of the GRBM</h4>
                 </a>
                 <p class="text-text-secondary">Authors: Nikhil Kapasi, William Whitehead, Luke Theogarajan</p>
             </div>
@@ -260,7 +260,7 @@
                         Developed a deep learning model to predict stock market trends.
                     </p>
                      <div class="mt-4">
-                        <a href="STOCK-DL.pdf" download class="inline-block bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
+                        <a href="placeholder.pdf" download class="inline-block bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
                             Download PDF
                         </a>
                     </div>
@@ -280,19 +280,76 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-24 px-8 bg-background">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Education</h2>
-            <div class="grid md:grid-cols-2 gap-8">
+    <!-- Coursework Section -->
+    <section id="coursework" class="py-24 px-8 bg-background">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-3xl font-bold text-center text-text-primary mb-16 tracking-wide">Coursework</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- VLSI and Digital Design Card -->
                 <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
-                    <h3 class="text-xl font-semibold text-text-primary mb-1">University of California, Santa Barbara</h3>
-                    <p class="text-text-secondary">B.S. in Computer Engineering, Honors</p>
-                    <p class="text-sm text-accent mt-1">Expected Graduation: 2026</p>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">VLSI and Digital Design ⚙️</h3>
+                    <ul class="text-text-secondary space-y-2">
+                        <li>ECE 15A - FUND OF LOGIC DES</li>
+                        <li>ECE 152A - DIGITAL DESIN PRIN.</li>
+                        <li>ECE 122A - VLSI PRINCIPLES</li>
+                        <li>ECE 122B - VLSI ARCH/DESIGN</li>
+                    </ul>
                 </div>
+                 <!-- Machine Learning Card -->
                 <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
-                    <h3 class="text-xl font-semibold text-text-primary mb-1">Saratoga High School</h3>
-                    <p class="text-text-secondary">Graduation: 2022, Very High Honors</p>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Machine Learning 🤖</h3>
+                    <ul class="text-text-secondary space-y-2">
+                        <li>ECE 180 - INTRO DEEP LEARNING</li>
+                        <li>ECE 133 - INTRO OPT AND LEARN</li>
+                        <li>ECE 186 - PROB MACH LEARN</li>
+                        <li>ECE 157A - MACH LEARN DES TEST</li>
+                    </ul>
+                </div>
+                <!-- Foundational Math and Sciences Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Foundational Math & Sciences 🔬</h3>
+                    <ul class="text-text-secondary space-y-2">
+                        <li>Introduction to Biology</li>
+                        <li>Infectious Disease</li>
+                        <li>MATH 3B - CALC WITH APPLI 2</li>
+                        <li>MATH 4A - LIN ALG W/APPS</li>
+                        <li>PHYS 1 & 2 - BASIC PHYSICS</li>
+                        <li>MATH 23A & 23B - Vector Calculus</li>
+                        <li>MATH 24 - Ordinary Diff Equas</li>
+                        <li>PHYS 3/3L & 4/4L - BASIC PHYSICS & LAB</li>
+                    </ul>
+                </div>
+                 <!-- Computer Science Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Computer Science 💻</h3>
+                    <ul class="text-text-secondary space-y-2">
+                        <li>CMPSC 16 - PROBLEM SOLVING I</li>
+                        <li>CMPSC 24 - PROBLEM SOLVING II</li>
+                        <li>CMPSC 32 - OBJ ORIENT DESIGN</li>
+                        <li>CMPSC 40 - FOUNDATION COMP SCI</li>
+                        <li>CMPSC 110 - INTRO RESEARCH CS</li>
+                        <li>CMPSC 130A - DATA STRUCT ALGOR</li>
+                        <li>ECE 154A - INTRO COMPUTER ARCH</li>
+                        <li>CMPSC 185 - HUM-COMP INTERACT</li>
+                    </ul>
+                </div>
+                 <!-- Circuits Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Circuits ⚡</h3>
+                    <ul class="text-text-secondary space-y-2">
+                        <li>ECE 10A/B/C - FOUNDTN CIRC & SYS</li>
+                        <li>ECE 10AL/BL/CL - FOUNDTN CIRC LAB</li>
+                        <li>ECE 130A - SIGNAL ANALYSIS</li>
+                    </ul>
+                </div>
+                <!-- Business and Management Card -->
+                <div class="bg-card p-8 rounded-lg border border-border-color shadow-sm">
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Business and Management 📈</h3>
+                    <ul class="text-text-secondary space-y-2">
+                        <li>TMP 120 - BUSINESS STRATEGY</li>
+                        <li>TMP 122 - ENTREPRENEURSHIP</li>
+                        <li>TMP 191VC - VENTURE CAPITAL/PE</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -359,7 +416,7 @@
                 <a href="mailto:nik.kapasi@gmail.com" class="bg-accent text-white px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity">
                     Email Me
                 </a>
-                <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="border border-border-color text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-border-color transition-colors">
+                <a href="https://www.linkedin.com/in/nikhil-kapasi" target="_blank" rel="noopener noreferrer" class="border border-border-color text-text-secondary px-6 py-3 rounded-md font-semibold hover:border-accent hover:text-accent transition-colors">
                     LinkedIn
                 </a>
             </div>
